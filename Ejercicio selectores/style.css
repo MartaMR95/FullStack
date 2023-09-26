@@ -1,0 +1,58 @@
+/* SELECTOR DE ELEMENTO CAMBIOS A NIVALE GLOBAL, CAMBIO A TODOS LOS H1 DE TODAS LAS SECCIONES, 
+ES EL MENOS ESPECÍFICO Y ES MAS GENERICO */
+h1{
+    color: green;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+}
+/* SELECTOR DE CLASE afecta a todos los elementos que tengan esa clase independientemnete del elemento que sea*/
+.seccion2 {
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5rem;
+}
+/* SELECTOR DE ID, el ID ES PARA UN SOLO ELEMENTO NO SE PUEDE REUTILIZAR QUE ES LA DIFERENCIA QUE TIENE CON LA CLASE*/
+#seccion3 {
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/* SELECTOR DE ATRIBUTO */
+
+[src="./Logo-Adecco.png"]{
+    margin: 50px;
+
+}
+
+/* SELECTOR DE CADENA DESCENDENTE el objetivo principal es cambiar todos los h4 dentro de la seccion nombrada con seccion5 
+a la vez. */
+
+.seccion5 h4{
+    color: pink;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+}
+/* SELECTOR DE TODOS LOS HIJOS. Con > solo coge el primer h5 que es el hijo, si se lo quitamos coge todos los h5 
+sin tener en cuenta si son hijos o no */
+.seccion6>h5{
+    color: yellow;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+}
+/* SELECTOR MULTIPLE */
+
+.seccion7 h3, .seccion7 h6{
+    color: purple;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+

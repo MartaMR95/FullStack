@@ -1,3 +1,63 @@
+:root{
+    /* --colorprincipal: red; */
+    --colorprimario: rgb(248 102 102);
+    --colorsecundario: rgb(33 37 41);
+    --fuenteprincipal: 'Open Sans', sans-serif;
+ 
+
+}
+    
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    /* background-color: var(--colorprincipal) */
+
+    font-family: var(--fuenteprincipal);
+
+
+
+}
+
+.cursos{
+    color: #F76666;
+    font-weight: 800;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tituloazul{
+    color: rgb(2 5 47);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+
+}
+
+.botoncursos{
+    color:white;
+    border: 2px solid black;
+    background-color: ;
+}
+/* .ejerciciocolor{
+    color: var(--colorprincipal);
+
+
+} */
+
+
+
+
+
+
+
+
+
 h1{
 
 color: white;
@@ -6,13 +66,31 @@ background-color: rgba(248, 102, 102, 0.65);
 font-weight: 800;
 padding: 35px;
 margin-bottom: 10px;
-font-family: 'Open Sans', sans-serif;
+/* font-family: 'Open Sans', sans-serif; */
 line-height: 1.2;
 
 }
 
 
+/* EJERCICIO DE PRUEBA
+#primerh3{
+    color: blueviolet;
+    font-size: small;
+    text-align: center;
 
+}
+
+#segundoh3{
+    color: aqua;
+    font-size: larger;
+    text-align: center;
+}
+
+.ejercicioselectores h3{
+    color: blue;
+    font-size:x-large;
+    text-align: center;
+} */
 
 /* html{
     font-size: 62.5%;
@@ -73,7 +151,10 @@ Así está más ordenado*/
 
 /* EJERCICIO DE SELECTORES */
 
-/* .primerh3{
+/* 
+
+SELECTOR DE CLASE
+.primerh3{
 
     color: red;
     text-transform: uppercase;
@@ -101,15 +182,9 @@ Así está más ordenado*/
 } */
 
 
-/* .primeraimagen{
-    image-orientation: from-image;
-    width: 10rem;
-    height: 10rem;
-
-} */
 
 /* 
-SELECTOR DE CADENA DESCENDIENTE  */
+SELECTOR DE CADENA DESCENDENTE  */
 /* .ejercicioselectores p{
     color: red;
     text-transform: uppercase;
@@ -120,7 +195,7 @@ SELECTOR DE CADENA DESCENDIENTE  */
 
 
 /* SELECTOR DE ATRIBUTO */
-/* [src="img/Logo-Adecco.png"]{
+/* [src=img/Logo-Adecco.png]{
     background-color: yellow;
 } */
 
