@@ -55,4 +55,17 @@ sin tener en cuenta si son hijos o no */
 }
 
 
+.cajaAmarilla{
+    height: 300px;
+    background-color: yellow;
+}
+.cajaAzul{
+    height: 100px;
+    background-color: blue;
+}
+
+.contenedor1{
+    max-width: 85%;
+    margin: 0 auto;
+}
 

@@ -15,11 +15,11 @@
         }
     </style> -->
 
-    
+
     <link rel="preload" href="CSS/style.css" as="style">
     <link href="./CSS/normalize.css" rel="stylesheet">
-    
-    
+
+
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet"> -->
@@ -43,16 +43,16 @@
         Hola Mundo!
     </h2> -->
 
-    <body>
-        <!-- <section class="seccionprueba"> -->
-        <!-- con seccion prueba obtenmos el mismo resultado que haciendo class con cada titulo 
+    <!-- <body> -->
+    <!-- <section class="seccionprueba"> -->
+    <!-- con seccion prueba obtenmos el mismo resultado que haciendo class con cada titulo 
             pero de esta manera minimizamos codigo  -->
-        <!-- Sin espacios ni empezae con numeros o caracteres especiales, hay que unir este titulo con el css 
+    <!-- Sin espacios ni empezae con numeros o caracteres especiales, hay que unir este titulo con el css 
             para que solo afecte a este titulo h5 en concreto y no a todos -->
-        <!-- <h3>Ejercicio selectores</h3>
+    <!-- <h3>Ejercicio selectores</h3>
             <h5>Ejercicio selectores</h5> -->
 
-        <!-- <p>Ejercicio selectores p </p>
+    <!-- <p>Ejercicio selectores p </p>
         </section>
 
         <section class="ejercicioselectores">
@@ -71,10 +71,10 @@
 
 
 
-        <!-- </section> -->
+    <!-- </section> -->
 
 
-        <!-- 
+    <!-- 
             EJERCICIO DE PRUEBA
             <section class="ejercicioselectores">
             <h3 id="primerh3">Título primero H3</h3>
@@ -85,7 +85,7 @@
 
 
 
-    </body>
+    <!-- </body> -->
     <header>
 
         <a href="#">Log in Alumnos</a>
@@ -98,35 +98,58 @@
 
     </header>
 
-    <main>
+    <main class="fondoMain">
 
-        <h1 class="ejerciciocolor">Descubre la formación que te dará la oportunidad de convertirte en un profesional
-            digital</h1>
-        <a href="#" class="botoncursos">Ver Cursos</a>
-        <!-- <img src="img/11641893944_banner_zona_centro.png"> -->
-        <img src="img/ico-centro.png">
+        <div class="contenedor">
+            <div class="margenDerecho">
 
+                <h1>Descubre la formación que te dará la oportunidad de convertirte en un
+                    profesional
+                    digital</h1>
+                <div class="flexMain">
+                    <img src="./img/ico-centro.png">
+                    <a href="#" class="botoncursos">Ver Cursos</a>
+                </div>
+            </div>
+        </div>
 
     </main>
-    <section>
+
+
+
+
+    <section class="Logos contenedor">
+
         <img src="img/Logos-oficiales.png" alt="Logos oficiales de tu carrera digital">
+        <img src="./img/Logo-Adecco.png">
+
+
     </section>
+
+
+
+
+    <section class="seccionCursos">
+
+        <h3>Cursos</>
+            <h2>Cambia Tu Futuro</h2>
+            <a href="#">Ver todo</a>
+            <a href="#">Madrid</a>
+            <div>
+                <h3>Marketing Digital</h3>
+                <a href="https://www.tucarreradigital.es/zona-centro/curso-marketing-digital#cursos">Inscribirme</a>
+                <h3 class="ejerciciocolor">Programación De Videojuegos, Diseño 3D y Realidad Virtual</h3>
+                <a
+                    href="https://www.tucarreradigital.es/zona-centro/curso-programacion-de-videojuegos-diseno-3d-y-realidad-virtual#cursos">Inscribirme</a>
+                <h3 class="ejerciciocolor">Programación Web Full Stack</h3>
+            </div>
+            <a
+                href="https://www.tucarreradigital.es/zona-centro/curso-programacion-web-full-stack#cursos">Inscribirme</a>
+
+    </section>
+
     <section>
-        <h3 class="cursos">Cursos</h3>
-        <h2 class="tituloazul">Cambia Tu Futuro</h2>
         <h3>¿Te Interesa Algún Otro Curso En Tu Ciudad?</h3>
-        <h3 class="ejerciciocolor">Marketing Digital</h3>
-        <a href="https://www.tucarreradigital.es/zona-centro/curso-marketing-digital#cursos">Inscribirme</a>
-        <h3 class="ejerciciocolor">Programación De Videojuegos, Diseño 3D y Realidad Virtual</h3>
-        <a
-            href="https://www.tucarreradigital.es/zona-centro/curso-programacion-de-videojuegos-diseno-3d-y-realidad-virtual#cursos">Inscribirme</a>
-        <h3 class="ejerciciocolor">Programación Web Full Stack</h3>
-        <a href="https://www.tucarreradigital.es/zona-centro/curso-programacion-web-full-stack#cursos">Inscribirme</a>
-
-    </section>
-
-    <section>
-        <h3 class="tituloazul">¿Te Interesa Algún Otro Curso En Tu Ciudad?</h3>
 
         <section>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/SzZlMSDKE8o?si=Wb_G7IFlIzJrObFX"
@@ -142,6 +165,7 @@
     </section>
 
     <section>
+
         <h3>¿PARA QUIÉN SON ESTOS CURSOS? </h3>
         <h2>Si quieres dar un giro a tu carrera profesional y formarte en profesiones digitales con futuro, este es tu
             lugar.</h2>
@@ -168,10 +192,12 @@
 
     </section>
 
-    <section>
-        <h2>Localizaciones</h2>
-        <h3>MADRID CALLE DEL MARQUÉS DE AHUMADA 7 PLANTA BAJA AULA 15 28028, MADRID, MADRID.</h3>
-        <h3> MADRID CALLE HOSPITAL 2 28012, MADRID, MADRID. </h3>
+    <section class="localizaciones">
+        <div class="contenedor">
+            <h2>Localizaciones</h2>
+            <h3>MADRID CALLE DEL MARQUÉS DE AHUMADA 7 PLANTA BAJA AULA 15 28028, MADRID, MADRID.</h3>
+            <h3> MADRID CALLE HOSPITAL 2 28012, MADRID, MADRID. </h3>
+        </div>
     </section>
 
     <section>
