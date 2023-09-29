@@ -1,0 +1,154 @@
+/* EJERCICIO SELECTOR DE TODOS LOS HIJOS  */
+
+.selectorCadenaDescendente h2{
+
+    background-color: blue;
+    height: 100px;
+}
+
+.selectorDeTodosLosHijos>div>div>h2 {
+    background-color: blue;
+    height: 100px;
+}
+
+
+/* DIFERENCIA ENTRE MARGIN Y PADDING */
+
+
+.seccionMargin{
+
+    background-color: violet;
+    height: 200px;
+    margin: 50px;
+    /* border: 6px solid yellow;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 80px; */
+}
+
+.seccionPadding{
+
+    background-color: yellow;
+    height: 200px;
+    padding: 50px;
+}
+
+
+/* DISPLAY BLOCK E INLINE */
+
+
+.bloqueInline>p{
+background-color: orange;
+
+
+
+}
+
+.bloqueInline a{
+
+
+    background-color: blue;
+    color: white;
+}
+
+.bloqueInline h1{
+    background-color: green;
+}
+
+.bloqueInline h3{
+
+    background-color: aquamarine;
+}
+
+.bloqueInline h6{
+
+
+    background-color: red;
+}
+
+.bloqueInline>div {
+
+    background-color: magenta;
+}
+
+
+
+
+
+
+
+
+
+
+.bloqueInline2>p{
+    background-color: orange;
+    display: inline;
+    
+    
+    }
+    
+    .bloqueInline2 a{
+    
+    
+        background-color: blue;
+        color: white;
+        display: block;
+    }
+    
+    .bloqueInline2 h1{
+        background-color: green;
+        display: inline;
+    }
+    
+    .bloqueInline2 h3{
+    
+        background-color: aquamarine;
+        display: inline;
+    }
+    
+    .bloqueInline2 h6{
+    
+    
+        background-color: red;
+        display: inline;
+    }
+    
+    .bloqueInline2>div>p {
+    
+        background-color: magenta;
+        display: inline;
+    }
+
+
+
+
+    /* USO DE JUSTIFY CONTENT Y ALIGN CONTENT */
+
+
+    .primerFlex{
+
+        background-color: green;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: end;
+        background-color: green;
+
+    }
+
+    .segundoFlex{
+        background-color: blue;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: end;
+
+
+    }
+
+
+

@@ -13,7 +13,13 @@
 
 html {
     font-size: 62.5%;
+    /* box-sizing: border-box;
+    *,*::before, *::after* ´{
+
+        box-sizing: inherit;
+    } */
 }
+
 
 body {
     font-size: 16px;
@@ -245,9 +251,13 @@ SELECTOR DE CADENA DESCENDENTE  */
     padding: 80px 0 180px 0;
 }
 
+
+
 .margenDerecho {
     margin-right: 33%;
 }
+
+
 
 h1 {
     color: white;
@@ -263,6 +273,7 @@ h1 {
 
 }
 
+
 .fondoMain a {
     background-color: black;
     color: white;
@@ -275,6 +286,7 @@ h1 {
     font-size: 1.4rem;
 }
 
+
 .flexMain {
     display: flex;
     flex-direction: row;
@@ -282,6 +294,14 @@ h1 {
 
     justify-content: space-between;
 }
+
+
+.botonVerCursos:hover{
+    background-color: white;
+    color: var(--colorprimario);
+    border: 2px solid var(--colorprimario);
+}
+
 
 
 
@@ -339,11 +359,6 @@ h1 {
 
 }
 
-.botonesCursos:hover{
-    background-color: white;
-    color: var(--colorprimario);
-    border: 1px solid white;
-}
 
 .botonVertodo {
     background-color: var(--colorprimario);
@@ -378,6 +393,7 @@ h1 {
 
 }
 
+
 .cursosOfertados {
     margin-bottom: 120px;
     display: flex;
@@ -386,6 +402,8 @@ h1 {
 
 
 }
+
+
 
 .cursosOfertados>div {
 
@@ -400,6 +418,8 @@ h1 {
 
 }
 
+
+
 .marketing {
     background-image: url(../img/Curso-programacion-web-full-stack-centro.png);
     background-size: cover;
@@ -411,6 +431,8 @@ h1 {
 
 }
 
+
+
 .videojuegos {
     background-image: url(../img/Curso-programacion-videojuegos-centro.png);
     background-size: cover;
@@ -419,6 +441,8 @@ h1 {
     margin-left: 15px;
 
 }
+
+
 
 .cursosOfertados div h2 {
 
@@ -430,6 +454,8 @@ h1 {
 
 
 }
+
+
 
 .cursosOfertados a {
 
@@ -456,7 +482,7 @@ h1 {
     /* max-width: 100%; */
     /* text-align: center; */
 
-    padding-bottom: 60px;
+    padding-bottom: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -503,7 +529,22 @@ h1 {
 /* ESTILOS SECCION VIDEO */
 
 
-/* ESTILOS SECCION PARA QUIEN SON ESTOS VIDEOS */
+
+.seccionVideo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+   
+
+
+
+
+}
+
+/* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
+
+
+
 
 
 /* ESTILOS LOCALIZACIONES */
