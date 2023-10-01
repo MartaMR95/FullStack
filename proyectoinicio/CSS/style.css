@@ -473,6 +473,13 @@ h1 {
 
 }
 
+.cursosOfertados:hover a{
+    background-color: var(--colorprimario);
+    color: white;
+    border: 2px solid white;
+
+}
+
 
 /* ESTILOS SECCION  PIDENOSLO */
 
@@ -544,6 +551,67 @@ h1 {
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 
 
+.paraQuienCursos h3{
+    color: var(--colorprimario);
+    text-transform: uppercase;
+    font-family: var(--fuenteprincipal);
+    font-weight: 800;
+   
+
+}
+
+.paraQuienCursos h2{
+
+    color: var(--colorsecundario);
+    font-family: var(--fuenteprincipal);
+    font-weight: 800;
+
+
+
+}
+
+.paraQuienCursos p{
+
+    color: var(--colorsecundario);
+    font-family: var(--fuenteprincipal);
+
+}
+
+.paraQuienCursos h4{
+
+    color: var(--colorsecundario);
+    text-transform: uppercase;
+    font-family: var(--fuenteprincipal);
+    font-weight: 800;
+
+}
+
+.paraQuienCursos h5{
+
+    color: var(--colorsecundario);
+    font-family: var(--fuenteprincipal);
+
+
+}
+
+.infografia{
+
+    background-color: var(--colorprimario);
+    color: white; 
+    font-family: var(--fuenteprincipal);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 20px 40px;
+    display: inline-block;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+
+
+
 
 
 
@@ -551,6 +619,14 @@ h1 {
 .localizaciones {
     background-color: black;
     color: white
+}
+
+.garantiaJuvenil {
+    color: var(--colorprimario);
+    text-transform: uppercase;
+    font-family: var(--fuenteprincipal);
+    text-decoration:underline;
+    font-weight: 600;
 }
 
 
