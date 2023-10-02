@@ -551,12 +551,27 @@ h1 {
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 
 
+.paraQuienCursos{
+
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+.paraQuienCursos>div{
+
+    flex: 1;
+    /* es el factor de crecimiento que tiene un contenedor respecto al otro, como los dos tienen 1 los dos miden lo mismo */
+    max-width: 50%;
+}
+
+
 .paraQuienCursos h3{
     color: var(--colorprimario);
     text-transform: uppercase;
     font-family: var(--fuenteprincipal);
     font-weight: 800;
-   
+    font-size: 1.7rem;
 
 }
 
@@ -565,31 +580,58 @@ h1 {
     color: var(--colorsecundario);
     font-family: var(--fuenteprincipal);
     font-weight: 800;
+    font-size: 2.7rem;
+    margin-bottom: 22px;
+    
+    
 
 
 
 }
+
+.paraQuienIzquierda{
+
+    padding-right: 15px;
+}
+
+
 
 .paraQuienCursos p{
 
     color: var(--colorsecundario);
     font-family: var(--fuenteprincipal);
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    font-weight: 200;
+    line-height: 1.5;
 
 }
 
-.paraQuienCursos h4{
+
+.paraQuienCursos span{
+
+    font-weight: bold;
+}
+
+.paraQuienIzquierda h4{
 
     color: var(--colorsecundario);
     text-transform: uppercase;
     font-family: var(--fuenteprincipal);
     font-weight: 800;
+    font-size: 1.7rem;
+    line-height: 1.8;
 
 }
 
-.paraQuienCursos h5{
+.paraQuienIzquierda h5{
 
     color: var(--colorsecundario);
     font-family: var(--fuenteprincipal);
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
 
 
 }
@@ -610,26 +652,277 @@ h1 {
 }
 
 
-
-
-
-
-
-/* ESTILOS LOCALIZACIONES */
-.localizaciones {
-    background-color: black;
-    color: white
-}
-
 .garantiaJuvenil {
     color: var(--colorprimario);
     text-transform: uppercase;
     font-family: var(--fuenteprincipal);
     text-decoration:underline;
     font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.paraQuienDer {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    margin-top: 60px;
+}
+
+.paraQuienDerSup {
+    background-color: var(--colorprimario);
+    color: var(--colorsecundario);
+    padding: 60px 30px;
+
+
+
 }
 
 
+.paraQuienDerSup h5{
+    color: white;
+    font-family: var(--fuenteprincipal);
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+
+
+
+}
+
+.paraQuienDerSup .destacarAzul {
+
+    color: var(--colorsecundario);
+    font-size: 2.5rem;
+    font-family: var(--fuenteprincipal);
+}
+
+.paraQuienDerSup span{
+
+    color: black;
+    font-size: 2.5rem;
+    font-family: var(--fuenteprincipal);
+}
+
+
+.paraQuienDerInf {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:-70px ;
+    margin-right: 30px;
+    
+
+}
+.paraQuienDerInf h4{
+
+    background-color: black;
+    color: white;
+    font-family: var(--fuenteprincipal);
+    font-size: 1.7rem;
+    flex: 1 ;
+    max-width: 60%;
+    padding: 50px 30px;
+    text-transform: uppercase;
+    /* margin-top: -100px;
+    margin-left: 150px;
+    padding-bottom: 100px; */
+    text-align:left;
+
+}
+
+.paraQuienDerInf img{
+    /* flex:1; */
+    /* max-width: 40%; */
+    width: 40px;
+}
+
+.paraQuienDerInf span{
+    color: var(--colorprimario);
+    font-family: var(--fuenteprincipal);
+    font-size: 1.7rem;
+
+   
+    
+}
+
+
+/* ESTILOS LOCALIZACIONES */
+.localizaciones {
+    background-color: black;
+    height: 400px;
+    /* margin-bottom: 0; */
+}
+
+.localizaciones h2{
+text-align: left;
+padding-top: 90px;
+color: white;
+font-family: var(--fuenteprincipal);
+font-size: 2.5rem;
+text-transform: uppercase;
+margin-bottom: 70px;
+
+}
+
+
+.localizaciones h3{
+    color: white;
+    font-family: var(--fuenteprincipal);
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+    }
+
+.localizaciones p{
+
+text-align: left;
+padding-top: 1.5rem;
+color: white;
+font-family: var(--fuenteprincipal);
+font-weight: 300;
+line-height: 1.5rem;
+font-size: 1.5rem;
+margin-top: 0;
+}
+
+
+
+.direcciones{
+
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+
+}
+
+.direccion1{
+    flex: 1;
+    width: 25%;
+    margin-right: 50px;
+    
+}
+.direccion2{
+    flex:1;
+    width: 25%;
+    margin-left: 50px;
+}
+
+
+
+
 /* ESTILOS CONTACTAR*/
+
+
+.contactar{
+    background-color: var(--colorprimario);
+    height: 450px;
+    margin-top: -20px;
+    
+
+    /* margin-top: 0; */
+}
+
+.contactar h3{
+
+    color: white;
+    font-family: var(--fuenteprincipal);
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding-top: 80px;
+
+}
+
+.contactar h2{
+    color: white;
+    font-family: var(--fuenteprincipal);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 27px;
+    margin-bottom: 50px;
+    
+}
+
+.datosContacto {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.telefono {
+    background-color: white;
+    flex:1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    margin-right: 25px;
+   border-radius: 0.55rem;
+    
+}
+
+.email{
+    background-color: white;
+    flex:1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    margin-left: 25px;
+    border-radius: 0.55rem;
+   
+}
+
+.telefono h4 {
+    color: var(--colorsecundario);
+    font-family: var(--fuenteprincipal);
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 0;
+
+
+}
+
+.telefono a{
+    color: var(--colorprimario);
+    text-decoration: none;
+    font-weight: 800;
+    
+}
+
+.email h4{
+    color: var(--colorsecundario);
+    font-family: var(--fuenteprincipal);
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 0;
+    
+}
+
+.email a{
+
+    color: var(--colorprimario);
+    text-decoration: none;
+    font-weight: 800;
+    
+
+}
+
+.datosContacto img{
+
+    margin-right: 15px;
+}
+
+
 /* ESTILOS FOOTER */
 /* ESTILOS HEADER */
