@@ -1,6 +1,6 @@
 /* EJERCICIO SELECTOR DE TODOS LOS HIJOS  */
 
-.selectorCadenaDescendente h2{
+.selectorCadenaDescendente h2 {
 
     background-color: blue;
     height: 100px;
@@ -15,7 +15,7 @@
 /* DIFERENCIA ENTRE MARGIN Y PADDING */
 
 
-.seccionMargin{
+.seccionMargin {
 
     background-color: violet;
     height: 200px;
@@ -26,7 +26,7 @@
     padding-top: 80px; */
 }
 
-.seccionPadding{
+.seccionPadding {
 
     background-color: yellow;
     height: 200px;
@@ -37,30 +37,30 @@
 /* DISPLAY BLOCK E INLINE */
 
 
-.bloqueInline>p{
-background-color: orange;
+.bloqueInline>p {
+    background-color: orange;
 
 
 
 }
 
-.bloqueInline a{
+.bloqueInline a {
 
 
     background-color: blue;
     color: white;
 }
 
-.bloqueInline h1{
+.bloqueInline h1 {
     background-color: green;
 }
 
-.bloqueInline h3{
+.bloqueInline h3 {
 
     background-color: aquamarine;
 }
 
-.bloqueInline h6{
+.bloqueInline h6 {
 
 
     background-color: red;
@@ -80,75 +80,135 @@ background-color: orange;
 
 
 
-.bloqueInline2>p{
+.bloqueInline2>p {
+
     background-color: orange;
     display: inline;
-    
-    
-    }
-    
-    .bloqueInline2 a{
-    
-    
-        background-color: blue;
-        color: white;
-        display: block;
-    }
-    
-    .bloqueInline2 h1{
-        background-color: green;
-        display: inline;
-    }
-    
-    .bloqueInline2 h3{
-    
-        background-color: aquamarine;
-        display: inline;
-    }
-    
-    .bloqueInline2 h6{
-    
-    
-        background-color: red;
-        display: inline;
-    }
-    
-    .bloqueInline2>div>p {
-    
-        background-color: magenta;
-        display: inline;
-    }
+
+
+}
+
+.bloqueInline2 a {
+
+
+    background-color: blue;
+    color: white;
+    display: block;
+}
+
+.bloqueInline2 h1 {
+    background-color: green;
+    display: inline;
+}
+
+.bloqueInline2 h3 {
+
+    background-color: aquamarine;
+    display: inline;
+}
+
+.bloqueInline2 h6 {
+
+
+    background-color: red;
+    display: inline;
+}
+
+.bloqueInline2>div>p {
+
+    background-color: magenta;
+    display: inline;
+}
 
 
 
 
-    /* USO DE JUSTIFY CONTENT Y ALIGN CONTENT */
+/* USO DE JUSTIFY CONTENT Y ALIGN CONTENT */
 
 
-    .primerFlex{
+.primerFlex {
 
-        background-color: green;
-        width: 300px;
-        height: 300px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: end;
-        background-color: green;
+    background-color: green;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: green;
 
-    }
+}
 
-    .segundoFlex{
-        background-color: blue;
-        width: 300px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: end;
-
-
-    }
+.segundoFlex {
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
 
 
+}
+
+
+/* EJERCICIOS REPASO DISPLAY FLEX */
+
+.flexColumna {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.primerParrafo {
+
+
+
+
+    height: 100px;
+    background-color: blue;
+
+
+}
+
+.segundoParrafo {
+
+
+    height: 200px;
+    background-color: green;
+
+
+}
+
+
+.ejercicioFlex{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.primeraSeccion {
+    width: 40%;
+    background-color: hotpink;
+}
+
+.segundaSeccion {
+    width: 60%;
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+}
+
+.parrafo1 {
+    width: 30%;
+    background-color: pink;
+
+}
+
+.parrafo2{
+    width: 70%;
+    background-color: violet;
+}
 
