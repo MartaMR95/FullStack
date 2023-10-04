@@ -182,7 +182,7 @@
 }
 
 
-.ejercicioFlex{
+.ejercicioFlex {
 
     display: flex;
     flex-direction: row;
@@ -207,19 +207,13 @@
 
 }
 
-.parrafo2{
+.parrafo2 {
     width: 70%;
     background-color: violet;
 }
 
 
 /* EJERCICIO PARA PRACTICAR MEDIA QUERIES */
-.colores {
-
-    height: 500px;
-    background-color: brown;
-}
-
 
 /* CREAR UNA SECCION DE 500PX DE ALTURA CON LAS SIGUIENTES RESTRICCIONES: */
 
@@ -250,5 +244,34 @@ COLOR DE FONDO MARRON */
 
 
 
+/* ejercicIo AR */
+
+.ejercicioAR {
+    height: 500px;
+    background-color: blue;
+    position: relative;
+    /* background-image: linear-gradient(to right, red 0%, blue 85%); */
+    background: rgba(197, 137, 215, 1);
+    background: -moz-linear-gradient(left, rgba(197, 137, 215, 1) 0%, rgba(197, 137, 215, 0.86) 34%, rgba(197, 137, 215, 0.59) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(197, 137, 215, 1)), color-stop(34%, rgba(197, 137, 215, 0.86)), color-stop(100%, rgba(197, 137, 215, 0.59)));
+    background: -webkit-linear-gradient(left, rgba(197, 137, 215, 1) 0%, rgba(197, 137, 215, 0.86) 34%, rgba(197, 137, 215, 0.59) 100%);
+    background: -o-linear-gradient(left, rgba(197, 137, 215, 1) 0%, rgba(197, 137, 215, 0.86) 34%, rgba(197, 137, 215, 0.59) 100%);
+    background: -ms-linear-gradient(left, rgba(197, 137, 215, 1) 0%, rgba(197, 137, 215, 0.86) 34%, rgba(197, 137, 215, 0.59) 100%);
+    background: linear-gradient(to right, rgba(197, 137, 215, 1) 0%, rgba(197, 137, 215, 0.86) 34%, rgba(197, 137, 215, 0.59) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c589d7', endColorstr='#c589d7', GradientType=1);
 
 
+}
+
+.ejercicioAR div {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    position: absolute;
+    bottom: 250px;
+    top: 250px;
+    right: 0;
+    -webkit-box-shadow: -12px -12px 5px 2px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: -12px -12px 5px 2px rgba(0, 0, 0, 0.52);
+    box-shadow: -12px -12px 5px 2px rgba(0, 0, 0, 0.52);
+}
