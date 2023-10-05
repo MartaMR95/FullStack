@@ -199,6 +199,7 @@
     background-color: purple;
     display: flex;
     flex-direction: row;
+
 }
 
 .parrafo1 {
@@ -274,4 +275,69 @@ COLOR DE FONDO MARRON */
     -webkit-box-shadow: -12px -12px 5px 2px rgba(0, 0, 0, 0.52);
     -moz-box-shadow: -12px -12px 5px 2px rgba(0, 0, 0, 0.52);
     box-shadow: -12px -12px 5px 2px rgba(0, 0, 0, 0.52);
+}
+
+
+
+.ejercicioGrid div{
+    border: 1px solid black;
+
+}
+
+
+
+.ejercicioGrid {
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 200px 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.ejercicioGrid2 div{
+    border:3px solid black;
+
+}
+
+.ejercicioGrid2{
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 300px 100px 200px;
+    margin-bottom: 100px;
+}
+
+
+.ejercicioGrid3 div{
+    border: 1px solid brown;
+    
+
+}
+.ejercicioGrid3{
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 3fr 2fr 1.5fr;
+    grid-template-rows: 5fr 15fr 16fr 7fr;
+    margin-bottom: 100px;
+}
+
+
+.ejercicioRepeat div{
+    border: 2px solid violet;
+
+}
+
+
+.ejercicioRepeat{
+    display: grid;
+    height: 300px;
+    /* column-gap: 20px;
+    row-gap: 20px; */
+    gap: 20px;
+
+    /* grid-template-rows: 2fr 2fr;
+    grid-template-columns: 1fr 1fr; */
+     grid: 2fr 2fr/ 1fr 1fr;
+
 }

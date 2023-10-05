@@ -580,7 +580,6 @@ content: "texto con pseudoelemento";
 }
 
 
-
 .cursosOfertados a {
 
     color: var(--colorprimario);
@@ -592,17 +591,31 @@ content: "texto con pseudoelemento";
     font-weight: 700;
     padding: 20px 60px;
     display: inline-block;
-
-
-
 }
 
-.cursosOfertados:hover a {
+
+.inscribirmeMarketing:hover {
     background-color: var(--colorprimario);
     color: white;
     border: 2px solid white;
 
 }
+
+
+.inscribirmeVideojuegos:hover{
+    background-color: var(--colorprimario);
+    color: white;
+    border: 2px solid white;
+
+}
+
+
+/* .cursosOfertados:hover a {
+    background-color: var(--colorprimario);
+    color: white;
+    border: 2px solid white;
+
+} */
 
 
 /* ESTILOS SECCION  PIDENOSLO */
@@ -699,7 +712,10 @@ content: "texto con pseudoelemento";
 
 @media(max-width:1140px){
     .paraQuienCursos{
-        flex-direction: column
+        flex-direction: column;
+        align-items:center;
+    
+
     }
 }
 
@@ -710,11 +726,13 @@ content: "texto con pseudoelemento";
     max-width: 50%;
 }
 
-@media(max-width){
+@media(max-width: 780px){
 
     .paraQuienCursos>div{
         flex: 1;
         max-width: 100%;
+
+
     }
 }
 
@@ -953,35 +971,44 @@ content: "texto con pseudoelemento";
 
 
 .direcciones {
+    display: grid;
+    grid-template-columns: 0.25fr 0.25fr;
+
+    /* grid: 1fr/repeat(4,fr); */
+
+}
+
+/* 
+.direcciones {
 
     padding-bottom: 1.5rem;
     display: flex;
     flex-direction: row;
     width: 50%;
 
-}
+} */
 
 
 
 
 
-.direccion1 {
+/* .direccion1 { */
     /* flex: 1; */
-    width: 25%;
+    /* width: 25%;
     margin-right: 50px;
 
-}
+} */
 
 
 
-.direccion2 {
+/* .direccion2 { */
     /* flex: 1; */
-    width: 25%;
+    /* width: 25%;
     margin-left: 50px;
-}
+} */
 
 
-@media (max-width:1140px){
+/* @media (max-width:1140px){
     .direcciones{
         width: 100%;
     }
@@ -989,9 +1016,9 @@ content: "texto con pseudoelemento";
         width: 50%;
     }
     
-}
+} */
 
-@media(max-width:768px){
+/* @media(max-width:768px){
 
     .direcciones{
         flex-wrap: wrap;
@@ -1001,7 +1028,7 @@ content: "texto con pseudoelemento";
         margin: 0px;
     }
     
-}
+} */
 
 
 /* ESTILOS CONTACTAR*/
