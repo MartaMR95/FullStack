@@ -580,6 +580,7 @@ content: "texto con pseudoelemento";
 }
 
 
+
 .cursosOfertados a {
 
     color: var(--colorprimario);
@@ -591,8 +592,8 @@ content: "texto con pseudoelemento";
     font-weight: 700;
     padding: 20px 60px;
     display: inline-block;
-}
 
+}
 
 .inscribirmeMarketing:hover {
     background-color: var(--colorprimario);
@@ -608,7 +609,6 @@ content: "texto con pseudoelemento";
     border: 2px solid white;
 
 }
-
 
 /* .cursosOfertados:hover a {
     background-color: var(--colorprimario);
@@ -711,13 +711,20 @@ content: "texto con pseudoelemento";
 
 
 @media(max-width:1140px){
+
     .paraQuienCursos{
         flex-direction: column;
         align-items:center;
-    
-
+        
     }
 }
+
+/* @media (min-width:768px) and (max-width:1140px){
+    .paraQuienCursos{
+        margin-left: 0;
+        margin-right: 0;
+    }
+} */
 
 .paraQuienCursos>div {
 
@@ -726,12 +733,11 @@ content: "texto con pseudoelemento";
     max-width: 50%;
 }
 
-@media(max-width: 780px){
+@media(max-width: 1140px){
 
     .paraQuienCursos>div{
         flex: 1;
         max-width: 100%;
-
 
     }
 }
@@ -829,6 +835,18 @@ content: "texto con pseudoelemento";
 }
 
 
+
+
+@media (max-width: 1140px){
+    .infografia{
+        padding: 10px 30px;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
 .garantiaJuvenil {
     color: var(--colorprimario);
     text-transform: uppercase;
@@ -844,6 +862,14 @@ content: "texto con pseudoelemento";
     flex-direction: column;
     margin-left: 45px;
     margin-top: 60px;
+}
+
+
+@media(max-width: 768px){
+    .paraQuienDer{
+       margin-left: 0;
+     
+    }
 }
 
 .paraQuienDerSup {
@@ -923,8 +949,6 @@ content: "texto con pseudoelemento";
     color: var(--colorprimario);
     font-family: var(--fuenteprincipal);
     font-size: 1.7rem;
-
-
 
 }
 
