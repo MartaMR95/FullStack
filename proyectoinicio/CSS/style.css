@@ -302,9 +302,15 @@ h1 {
     margin-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.2;
+    margin-right: 75px;
+
+}
 
 
-
+@media(max-width:768px){
+    h1{
+        margin-right: 0;
+    }
 }
 
 
@@ -328,14 +334,18 @@ content: "texto con pseudoelemento";
     font-family: var(--fuenteBotones);
     font-weight: 700;
     font-size: 1.4rem;
+    margin-right: 75px;
 }
 
 @media (max-width: 768px) {
     .fondoMain a {
         padding: 24px 70px;
+        margin-right: 0;
 
     }
 }
+
+
 
 
 .flexMain {
@@ -890,10 +900,8 @@ content: "texto con pseudoelemento";
     margin-top: 0;
     margin-bottom: 10px;
 
-
-
-
 }
+
 
 .paraQuienDerSup .destacarAzul {
 
@@ -901,6 +909,7 @@ content: "texto con pseudoelemento";
     font-size: 2.5rem;
     font-family: var(--fuenteprincipal);
 }
+
 
 .paraQuienDerSup span {
 
@@ -919,8 +928,8 @@ content: "texto con pseudoelemento";
     margin-top: -70px;
     margin-right: 30px;
 
-
 }
+
 
 .paraQuienDerInf h4 {
 
@@ -939,11 +948,13 @@ content: "texto con pseudoelemento";
 
 }
 
+
 .paraQuienDerInf img {
     /* flex:1; */
     /* max-width: 40%; */
     width: 40px;
 }
+
 
 .paraQuienDerInf span {
     color: var(--colorprimario);
@@ -953,12 +964,17 @@ content: "texto con pseudoelemento";
 }
 
 
+
 /* ESTILOS LOCALIZACIONES */
+
+
+
 .localizaciones {
     background-color: black;
     height: 400px;
     /* margin-bottom: 0; */
 }
+
 
 .localizaciones h2 {
     text-align: left;
@@ -967,7 +983,7 @@ content: "texto con pseudoelemento";
     font-family: var(--fuenteprincipal);
     font-size: 2.5rem;
     text-transform: uppercase;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
 
 }
 
@@ -1001,6 +1017,27 @@ content: "texto con pseudoelemento";
     /* grid: 1fr/repeat(4,fr); */
 
 }
+
+
+@media(min-width:768px) and (max-width:1140px){
+    .direcciones{
+        grid-template-columns: 0.5fr 0.5fr;
+
+    }
+  
+}
+
+
+@media(max-width:768px){
+    .direcciones{
+    display: flex;
+    flex-direction: column;
+
+    }
+}
+
+
+
 
 /* 
 .direcciones {
@@ -1061,10 +1098,17 @@ content: "texto con pseudoelemento";
 .contactar {
     background-color: var(--colorprimario);
     height: 450px;
-    margin-top: -20px;
+    padding-top: 20px;
+    /* margin-top: -20px; */
 
 
     /* margin-top: 0; */
+}
+
+@media(max-width:768px){
+    .contactar{
+        padding-bottom: 70px;
+    }
 }
 
 .contactar h3 {
@@ -1074,7 +1118,7 @@ content: "texto con pseudoelemento";
     font-weight: 200;
     text-transform: uppercase;
     font-size: 17px;
-    padding-top: 80px;
+    /* padding-top: 80px; */
 
 }
 
@@ -1084,8 +1128,18 @@ content: "texto con pseudoelemento";
     font-weight: 800;
     text-transform: uppercase;
     font-size: 27px;
-    margin-bottom: 50px;
+    padding-bottom: 60px;
+    /* margin-bottom: 50px; */
 
+}
+
+
+
+
+@media(max-width:1140px){
+    .contactar h2{
+        padding-bottom: 0;
+    }
 }
 
 .datosContacto {
@@ -1109,6 +1163,8 @@ content: "texto con pseudoelemento";
     border-radius: 0.55rem;
 
 }
+
+
 
 .email {
     background-color: white;
@@ -1153,13 +1209,21 @@ content: "texto con pseudoelemento";
 
 }
 
+
+
 .email a {
 
     color: var(--colorprimario);
     text-decoration: none;
     font-weight: 800;
 
+}
 
+@media(max-width:768px){
+    .email a{
+        
+        font-size: 1.18rem;
+    }
 }
 
 .datosContacto img {
@@ -1202,8 +1266,17 @@ content: "texto con pseudoelemento";
     border-bottom: 1px solid var(--colorsecundario);
     padding-bottom: 50px;
 
-
 }
+
+
+@media(max-width:1140px){
+    .enlacesZona{
+
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 .otrosEnlaces {
     height: 50%;
@@ -1214,9 +1287,19 @@ content: "texto con pseudoelemento";
     flex-direction: row;
     justify-content: flex-start;
 
-
-
 }
+
+@media(max-width:768px){
+    .otrosEnlaces {
+       flex-wrap: wrap;
+
+        
+    }
+
+    
+    
+}
+
 
 .enlacesZona a {
     margin-right: 80px;
@@ -1228,6 +1311,8 @@ content: "texto con pseudoelemento";
 
 }
 
+
+
 .otrosEnlaces a {
 
     margin-right: 60px;
@@ -1236,6 +1321,10 @@ content: "texto con pseudoelemento";
     /* font-weight: 800; */
     font-size: 1.5rem;
 }
+
+
+
+
 
 
 
