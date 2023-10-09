@@ -1289,16 +1289,15 @@ content: "texto con pseudoelemento";
 
 }
 
-@media(max-width:768px){
+/* @media(max-width:768px){
+
     .otrosEnlaces {
-       flex-wrap: wrap;
-
-        
-    }
-
+       display: flex;
+       flex-direction: row;
+      
+    }  
     
-    
-}
+} */
 
 
 .enlacesZona a {
@@ -1320,6 +1319,13 @@ content: "texto con pseudoelemento";
     font-family: var(--fuenteprincipal);
     /* font-weight: 800; */
     font-size: 1.5rem;
+}
+
+
+@media(max-width:768px){
+    .otrosEnlaces a{
+        margin-right: 0;
+    }
 }
 
 
