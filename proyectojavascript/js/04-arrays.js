@@ -162,8 +162,8 @@ console.log(carrito)
 
 
 
-// INCLUDE PARA ARREGLO PLANO
-
+// INCLUDE PARA ARREGLO PLANO (Boolean, strings y numeros)
+ 
 let resultado;
 
 resultado=meses.includes("Mayo")
@@ -171,5 +171,31 @@ console.log("uso includes para buscar en array plano", resultado);
 
 
 // resultado=carrito.some(function(producto));
+
+
+// SOME IDEAL PARA ARREGLO DE OBJETOS
+
+resultado = carrito.some(function (producto) {
+  return producto.nombre === "Tablet" //ME DEVOLVERÁ TRUE/FALSE
+});
+
+console.log("RESULTADO DE FUNCION SOME IDEAL", resultado);
+
+// COMO SABER EL TOTAL DEL CARRITO. REDUCE
+
+resultado = carrito.reduce(function (total=0, producto) { // PARA ITERAR
+  // TOTAL, PRODUCTO SON LOS PARAMETROS DE LA FUNCION
+  return total + producto.precio
+}, 0); // EL VALOR DONDE INICIA
+console.log("USO DE REDUCE", resultado);
+
+// FILTER, PARA FILTRAR
+// EL MÁS UTILIZADO
+
+resultado = carrito.filter(function (X) {
+  return X.precio <= 1
+});
+console.log("USO DE FILTER", resultado);
+
 
 
