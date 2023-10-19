@@ -198,4 +198,10 @@ resultado = carrito.filter(function (X) {
 console.log("USO DE FILTER", resultado);
 
 
-
+// === EXACTAMENTE IGUALES
+// == IGUALES PERO NO ESTRICTAMENTE 200="200"
+// !== DIFERENTES
+// < MENOR QUE
+// <= MENOR IGUAL
+// > MAYOR QUE
+// >= MAYOR IGUAL
