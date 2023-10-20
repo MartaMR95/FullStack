@@ -246,10 +246,10 @@ for (let i = 1; i <= 20; i++) {
 
 let arrayNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-for (let i=0;i<arrayNumeros.length;i++) {
+for (let i = 0; i < arrayNumeros.length; i++) {
     console.log(arrayNumeros)
 
-   
+
 }
 
 // EJERCICIO FOR BUCLE CON ARRAY DE OBJETOS
@@ -280,7 +280,7 @@ let carrito = [
 ];
 
 
-for (let x=0;x<carrito.length;x++){
+for (let x = 0; x < carrito.length; x++) {
     console.log(carrito[x])
     console.log(carrito[x].nombre)
 }
@@ -288,8 +288,8 @@ for (let x=0;x<carrito.length;x++){
 
 // WHILE LOOP
 
-let i=0;
-while(i<100){
+let i = 0;
+while (i < 100) {
     console.log(i);
     i++;
 }
@@ -298,9 +298,91 @@ while(i<100){
 
 // DO WHILE LOOP
 
-let j=100;
-do{
+let j = 100;
+do {
     console.log(j);
     j++;
 
-}while(j<50);
+} while (j < 50);
+
+
+// EJERCICIO MOSTRAR NUMEROS PARES , PERO CON EL WHILE MOSTRAR DEL 1 AL 20 TODOS LOS NÚMEROS PARES, INCLUIDOS AMBOS
+
+let z = 1
+while (z <= 20) {
+    if (z % 2 === 0) { console.log(z) };
+    z++;
+}
+
+// CREAR UNA FUNCION QUE ME PIDA UN NUMERO Y ESA VARIABLE ME TIENE QUE DECIR SI ES UN NUMERO POSITIVO, NEGATIVO O SI ES 0
+
+
+
+function pedirNumero (x){
+    if (x>0){
+        console.log("Positivo");
+    }else if(x<0){
+console.log("Negativo");
+    }else {
+        console.log("Es 0");
+    }
+}
+
+pedirNumero(6)
+
+
+// EJERCICIO CREAR UNA FUNCION QUE DADO UN ARGUMENTO, (NUMERO ENTERO) ME DE UNA CUENTA ATRAS DE LOS NUMEROS
+
+
+function cuentaAtras(x){
+    for (let i=x;i>=0; i--){
+        console.log(i)
+    }
+
+}
+
+cuentaAtras(10)
+
+
+// CREAR UNA FUNCION ACUMULACION QUE DADO UN ARGUMENTO DE ENTRADA N, ME DE LA SUMA DE TODOS LOS NUMEROS ENTRE 0 Y N 
+let totalAcumulacion=0
+
+function acumulacion(n){
+    for(let i=0;i<=n;i++){
+       totalAcumulacion=totalAcumulacion+i;
+    }
+   console.log(totalAcumulacion);
+
+}
+
+acumulacion(6)
+
+
+
+// EJERCICIO FUNCION QUE DADO UN ARGUMENTO ME CALCULE LA MEDIA DE LA SUMA DE TODOS LOS VALORES 
+
+
+
+// function acumulacion(n){
+//     for(let i=0;i<=n;i++){
+//        totalAcumulacion=totalAcumulacion+i;
+//     }
+//    console.log(totalAcumulacion/n+1);
+
+// }
+
+// acumulacion(6)
+
+let r=0;
+
+function media(n){
+    while(r<=n){
+        totalAcumulacion+=r;
+        r++;
+    }
+console.log(totalAcumulacion/n+1)
+
+}
+
+
+media(6)
