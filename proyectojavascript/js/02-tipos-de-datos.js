@@ -121,7 +121,7 @@ console.log("calcular area en funcion del diametro:", area);
 
 
 // CREAR UN DADO
-
+Math.round(math.ramdon()*(n2-n1)+n1)
 // Math.round(math.ramdon()*5+1);
 
 

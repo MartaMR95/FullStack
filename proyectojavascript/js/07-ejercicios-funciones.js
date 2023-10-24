@@ -31,16 +31,19 @@
 // F: INVERTIR
 // P: CADENA
 
+let cadenaF = " ";
 
-
-function textoInvertido(x) {
-
+function invertir(cadena) {
+    for (i = cadena.length - 1; i >= 0; i--) {
+        cadenaF += cadena ^ [i];
+    }
+    return cadenaF;
 }
 
 
+console.log(invertir("Hola"))
 
 
-textoInvertido("Hola")
 
 
 
@@ -70,7 +73,7 @@ function contiene(cadena, letra) {
     console.log(cadena.includes(letra))
 }
 
-contiene(frase, "dia")
+contiene(frase, "o")
 
 
 
@@ -105,7 +108,7 @@ minnum(numeros)
 // P: ARRAY, VALOR
 
 
-let verFal = [true, false, false, true, true, false, false]
+let verdFal = [true, false, false, true, true, false, false]
 
 function numbooleanos(array, valor) {
     console.log(array.length)
@@ -113,30 +116,34 @@ function numbooleanos(array, valor) {
 }
 
 
-numbooleanos(verFal)
+numbooleanos(verdFal)
 
 // función que determine si todos los elementos de un array son números.
 // F: ARRAYNUMEROS
 // P: ARRAY
 
 
-let arrayMezcla = [1, "hola", true, 2]
-
+let arrayMezcla = [1, 2]
+let contadorNumeros=0;
 function arrayNumeros(array) {
-    for (var i = 0; i < array.length; i++) {
-        if (typeof (array[i] !== "number")) {
-            return false;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof array[i] === "number") {
+            contadorNumeros++;
         }
     }
 }
 
-if (arrayNumeros(arrayMezcla)) {
+
+arrayNumeros(arrayMezcla);
+
+
+
+
+if (contadorNumeros===arrayMezcla.length) {
     console.log("Todos los elementos son numeros")
 } else {
-    console.log("Al menos un elemento es numero")
+    console.log("NO TODOS SON NUMEROS")
 }
-
-
 
 
 
@@ -152,7 +159,7 @@ function numeroAleatorio(n1, n2) {
 }
 
 
-numeroAleatorio(2, 10)
+numeroAleatorio(1, 10)
 
 
 // función que calcule el área de un triángulo con base y altura como parámetros. Area=base*altura/2
@@ -188,13 +195,11 @@ gradosFahren(20)
 // F: BISIESTO
 // P: DIAS
 
-let año2023 = 365
 
-bisiesto(366)
 
 function bisiesto(dias) {
 
-    if (año2023 === dias) {
+    if (366 === dias) {
         console.log("Año es bisiesto")
     } else {
         console.log("Es un año no bisiesto")
@@ -202,7 +207,7 @@ function bisiesto(dias) {
 
 }
 
-
+bisiesto(366)
 
 
 // función que cuente la cantidad de vocales en una cadena.
@@ -215,31 +220,27 @@ function vocales(texto) {
 
     for (let i = 0; i < texto.length; i++) {
         if (texto[i] === "a") {
-            return contadorVocales++;
+            contadorVocales++;
         }
-
         if (texto[i] === "e") {
-            return contadorVocales++;
+            contadorVocales++;
         }
-
-
         if (texto[i] === "i") {
-            return contadorVocales++;
+            contadorVocales++;
         }
-
         if (texto[i] === "o") {
-            return contadorVocales++;
+            contadorVocales++;
         }
         if (texto[i] === "u") {
-            return contadorVocales++;
+            contadorVocales++;
         }
-        
-        
+
+
     }
     console.log(contadorVocales);
 }
 
-vocales("Marta");
+vocales("Martita");
 
 
 
@@ -253,9 +254,20 @@ vocales("Marta");
 // F: PALABRAS
 // P: TEXTO
 
+let contadorPalabras = 0;
 
 
+function palabras(texto) {
 
+    for (let i = 0; i < texto.length; i++) {
+        if (texto[i] === " ") {
+            contadorPalabras++;
+        }
+    }
+    console.log(contadorPalabras + 1);
+}
+
+palabras("Esto es un texto");
 
 
 
@@ -272,9 +284,12 @@ vocales("Marta");
 
 
 function eliminaDuplicados(array) {
-    console.log(array.filter)
-
+    return Array.from(new Set(array))
 }
+
+let numerosSinDuplicar = eliminaDuplicados(numeros);
+
+console.log(numerosSinDuplicar);
 
 
 
@@ -282,9 +297,12 @@ function eliminaDuplicados(array) {
 // F: ORDENARARRAY
 // P: ARRAY
 
+function ordenArray(array) {
+    return array.sort(function(a,b){return a-b})
+}
 
-
-
+let ordenAscendente = ordenArray(numeros);
+console.log(ordenAscendente)
 
 
 
@@ -306,8 +324,39 @@ function eliminaDuplicados(array) {
 
 
 
+function nombresMes(numMes) {
 
+    switch (numMes) {
+        case 1: console.log("Estamos en enero");
+            break;
+        case 2: console.log("Estamos en febrero");
+            break;
+        case 3: console.log("Estamos en marzo");
+            break;
+        case 4: console.log("Estamis en abril");
+            break;
+        case 5: console.log("Estamos en mayo");
+            break;
+        case 6: console.log("Estamos en junio");
+            break;
+        case 7: console.log("Esatmos en julio");
+            break;
+        case 8: console.log("Estamos en agosto");
+            break;
+        case 9: console.log("Estamos en septiembre");
+            break;
+        case 10: console.log("Estamos en octubre");
+            break;
+        case 11: console.log("Estamos en noviembre");
+            break;
+        case 12: console.log("Estamos en diciembre");
+            break;
 
+    }
+
+}
+
+nombresMes(5)
 
 
 
@@ -319,12 +368,30 @@ function eliminaDuplicados(array) {
 // P: CONTRASEÑA
 
 
+let miContraseña = "Mayuscula456"
+function contraseñaSegura(contraseña) {
+    if (contraseña.length > 7 &&
+        /[A-Z]/.test(contraseña) &&
+        /[a-z]/.test(contraseña) &&
+        /\d/.test(contraseña)) {
+        console.log("La contraseña es segura");
+    }else{
+        console.log("La contraseña no es segura");
+    }
+}
 
 
-
+contraseñaSegura("jnajjalLL20")
 
 
 // función que tome una cadena y reemplace todas las letras 'LETRA1' por 'LETRA2'.
 // F: REEMPLAZAR
 // P: LETRA1, LETRA2
+
+
+
+
+
+
+
 

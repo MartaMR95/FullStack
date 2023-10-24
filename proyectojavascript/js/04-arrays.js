@@ -112,11 +112,12 @@ console.table(numeros);
 
 // eliminar x elemtnos a partir del y splice (x,y)
 numeros.splice(2,3);
-console.log(numeros)
+console.log(numeros)  
 
 
 
-// METODO SPREAD
+// METODO SPREAD OPERATOR Spread syntax can be used when all elements from an object 
+// or array need to be included in a new array or object, or should be applied one-by-one in a function call's arguments list.
 
 let nuevoArreglo=[...numeros,1540];
 console.log(nuevoArreglo);
