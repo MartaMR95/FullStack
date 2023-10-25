@@ -33,21 +33,21 @@ for (i = 0; i < carrito.length; i++) {
     console.log(carrito[i])
 }
 
-// PERO HAY UN METODO FOR EACH QUE ESTO LO SIMPLIFICA. NO CREA UN NUEVO ARRAY. Mostrar por consola ya la informacion
+// PERO HAY UN METODO FOR EACH QUE ESTO LO SIMPLIFICA(RECORRE EL OBJETO IGUALMENTE). NO CREA UN NUEVO ARRAY. Mostrar por consola ya la informacion
 
 carrito.forEach(function (producto) {
     console.log(producto);
 })
 
 
-// METODO MAP CREA UN NUEVO ARRAY. CREA UN NUEVO ARRAY CON LA PROPIEDAD
+// METODO MAP CREA UN NUEVO ARRAY. CREA UN NUEVO ARRAY.Crear variables nuevas
 const arrayMap = carrito.map(producto => producto.nombre);
 
 console.log(arrayMap);
 
 
 
-// THIS se refiere solo a la propiedades del objeto en el que esta
+// THIS se refiere solo a la propiedades del objeto en el que esta.
 
 
 let reserva = {
@@ -91,3 +91,6 @@ let fecha = {
 
 
 fecha.faltantes();
+
+
+
