@@ -1,4 +1,7 @@
 
+//POO. PROGRAMACION ORIENTADA A OBJETOS
+
+
 // OBJECT LITERAL, MANUAL
 
 let producto={
@@ -190,6 +193,7 @@ class Itv extends Coche{
         return (`Falta para la siguiente ITV ${this.añoItv-2023} años`)
     }
 
+
 }
 
 let miCoche2= new Itv (2019,"12354bnn",2026);
@@ -197,3 +201,8 @@ let miCoche2= new Itv (2019,"12354bnn",2026);
 
 
 console.log(miCoche2.proximaItv());
+
+
+
+
+
