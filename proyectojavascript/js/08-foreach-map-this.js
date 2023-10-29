@@ -81,7 +81,7 @@ console.log(reserva.informacion())
 let fecha = {
     año: 2023,
     mes: "octubre",
-    dia: 24,
+    dia: 26,
     faltantes: function () {
         console.log(`Faltan ${31 - this.dia}`)
     }

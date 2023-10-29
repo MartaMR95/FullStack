@@ -54,7 +54,7 @@ console.log(fecha2);
 console.log(fecha3);
 
 
-// PROTOTYPES ME PERMITEN CREAR FUNCIONES QIE SOLO SE ULTILIZAN EN UN OBJETO ESPECIFICO. NO SE USA MUCHO
+// PROTOTYPES ME PERMITEN CREAR FUNCIONES QUE SOLO SE ULTILIZAN EN UN OBJETO ESPECIFICO. NO SE USA MUCHO
 
 
 
@@ -104,6 +104,7 @@ class ProductoClase2{
 
 let producto8= new ProductoClase2("TV nueva",600);
 
+
 console.log("Producto 8 con class")
 console.log(producto8);
 console.log(producto8.formatearProducto2())
@@ -111,7 +112,10 @@ console.log(producto8.formatearProducto2())
 console.log(producto8.calcularDescuento())
 
 
+let producto9= new ProductoClase2("Reloj digital",300);
 
+console.log(producto9.formatearProducto2());
+console.log(producto9.calcularDescuento());
 
 // EJERCICIO 
 
