@@ -126,17 +126,17 @@ nombre.addEventListener("input", function (evento) {
 let correoFormulario = document.querySelector("#Correo");
 let mensaje = document.querySelector("#Mensaje");
 let resultadoNombre,
-    resultadoEmail,
+    resultadoCorreo,
     resultadoMensaje;
 
 
 
 correoFormulario.addEventListener("input", function(evento){
-    resultadoEmail = evento.target.value;
+    resultadoCorreo = evento.target.value;
     actualizarTexto();
 });
 
-mensajeFormulario.addEventListener("input", function(evento){
+mensaje.addEventListener("input", function(evento){
     resultadoMensaje = evento.target.value;
     actualizarTexto();
 });
@@ -148,7 +148,7 @@ nombre.addEventListener("input", function(evento){
 
 
 function actualizarTexto(){
-    document.querySelector(".parrafo").textContent = `Esta es la web de ${resultadoNombre} con email ${resultadoEmail} 
+    document.querySelector(".parrafo").textContent = `Esta es la web de ${resultadoNombre} con email ${resultadoCorreo} 
     y su propuesta es ${resultadoMensaje}` 
 }
 
