@@ -123,20 +123,20 @@ nombre.addEventListener("input", function (evento) {
 //PROPUESTA ES:.....
 
 
-const emailF = document.querySelector("#Correo");
-const mensajeF = document.querySelector("#Mensaje");
+let correoFormulario = document.querySelector("#Correo");
+let mensaje = document.querySelector("#Mensaje");
 let resultadoNombre,
     resultadoEmail,
     resultadoMensaje;
 
 
 
-emailF.addEventListener("input", function(evento){
+correoFormulario.addEventListener("input", function(evento){
     resultadoEmail = evento.target.value;
     actualizarTexto();
 });
 
-mensajeF.addEventListener("input", function(evento){
+mensajeFormulario.addEventListener("input", function(evento){
     resultadoMensaje = evento.target.value;
     actualizarTexto();
 });
