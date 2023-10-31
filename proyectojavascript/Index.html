@@ -21,21 +21,62 @@
     <section class="seccionPrincipal">
 
         <h1>Esto es un titulo</h1>
-        <a id="botonPrincipal" href="#" class="botonClass">Boton</a>
+        <a id="botonPrincipal" href="#" class="botonClass">Boton principal</a>
 
         <div class="navPrincipal">
             <a class="enlace" href="#">ENLACE 1</a>
             <a class="enlace" href="#">ENLACE 2</a>
             <a class="enlace" href="#">ENLACE 3</a>
         </div>
-        
+
     </section>
 
     <div class="slider">
         <div class="slide" id="slide1"></div>
         <div class="slide" id="slide2"></div>
         <div class="slide" id="slide3"></div>
-    </div> 
+    </div>
+
+
+
+    <form>
+
+        <fieldset> 
+            <!-- AGRUPAR TODOS LOS ELEMENTOS DEL FORMULARIO -->
+
+            <legend> Contáctanos rellenando todos los campos </legend> 
+            <!-- DESCRIBIR EL FORMULARIO -->
+
+            <div> 
+                <!-- PARA AGRUPAR LOS DIFERENTES INPUTS -->
+                <div>
+                    <label> Nombre </label>    
+                    <!-- ETIQUETA -->
+                    <input id="Nombre" type="Text" placeholder="Tu Nombre"> 
+                    <!-- CAMPO DONDE SE ESCRIBEM PLACEHOLDER, LA INDICACIÓN -->
+                </div>
+                <div>
+                    <label> Correo </label>
+                    <input id="Correo" type="email" placeholder="Tu Email">
+                </div>
+                <div>
+                    <label> Mensaje </label>
+                    <textarea id="Mensaje "></textarea>
+                   
+                </div>
+            </div>
+            <div>
+                <input class="botonFormulario" type="submit" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+   
+    <p class="parrafo">
+        
+    </p>
+
+
+
     <!-- <a href="#" id="boton">BOTON NOTIFICACIONES</a> -->
 
     <!-- <script src="./js/01-variables.js"></script>  -->
@@ -49,8 +90,10 @@
     <!-- <script src="./js/09-poo.js"></script> -->
     <!-- <script src="./js/10-promise.js"></script> -->
     <!-- <script src="./js/11-fetch-api.js"></script> -->
-    <script src="./js/12-dom.js"></script>
+    <!-- <script src="./js/12-dom.js"></script> -->
+    <script src="./js/13-eventos.js"></script>
 
 
 </body>
+
 </html>

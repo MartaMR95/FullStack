@@ -386,3 +386,13 @@ console.log(totalAcumulacion/n+1)
 
 
 media(6)
+
+
+
+
+
+// USO DE PROMPT, ME PIDE POR PANTALLA INFORMACIÓN Y LA VOY
+// ALMACENAR EN LA VARIABLE
+
+// const nombreApellido = prompt("Escriba su nombre","Escriba aqui");
+// console.log(nombreApellido)
