@@ -62,3 +62,14 @@ body{
     background-color: red;
 } */
 
+.estiloEnlaces{
+    display: flex;
+}
+
+.estiloEnlaces a{
+    margin-right: 3rem;
+}
+
+.fichas{
+    background-color: aqua;
+}

@@ -35,7 +35,7 @@ console.log(producto3);
 console.log(producto4);
 
 
-// EJERCICIO OBJECT CONSTRUCTOR
+// EJERCICIO OBJECT CONSTRUCTOR MEDIANTE FUNCIONES
 
 function Fecha(año,mes,dia){
     this.año=año;

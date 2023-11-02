@@ -131,25 +131,25 @@ let resultadoNombre,
 
 
 
-correoFormulario.addEventListener("input", function(evento){
+correoFormulario.addEventListener("input", function (evento) {
     resultadoCorreo = evento.target.value;
     actualizarTexto();
 });
 
-mensaje.addEventListener("input", function(evento){
+mensaje.addEventListener("input", function (evento) {
     resultadoMensaje = evento.target.value;
     actualizarTexto();
 });
 
-nombre.addEventListener("input", function(evento){
+nombre.addEventListener("input", function (evento) {
     resultadoNombre = evento.target.value;
     actualizarTexto();
 });
 
 
-function actualizarTexto(){
+function actualizarTexto() {
     document.querySelector(".parrafo").textContent = `Esta es la web de ${resultadoNombre} con email ${resultadoCorreo} 
-    y su propuesta es ${resultadoMensaje}` 
+    y su propuesta es ${resultadoMensaje}`
 }
 
 
@@ -164,10 +164,10 @@ function actualizarTexto(){
 
 //E IR ALMACENANDO LOS RESULTADOS DEL FORMULARIO
 
-let datos={
-    Nombre:"",
-    Email:"",
-    Mensaje:""
+let datos = {
+    Nombre: "",
+    Email: "",
+    Mensaje: ""
 }
 
 
@@ -175,10 +175,10 @@ let datos={
 
 //EVENTOS DE SUBMIT
 
-const formulario=document.querySelector("form");
+const formulario = document.querySelector("form");
 
 
-formulario.addEventListener("submit", function(evento){
+formulario.addEventListener("submit", function (evento) {
     evento.preventDefault();
     console.log("Enviando formulario...")
 
@@ -193,6 +193,52 @@ formulario.addEventListener("submit", function(evento){
 
 
 */
+
+// EJERCICIO
+
+function obtenerZonas(){
+    fetch("zonas.json")
+        .then(resultado =>{
+            return resultado.json()
+        })
+    .then(datos=>{
+        const{zonas}=datos;
+        zonas.forEach(zonas =>{
+            const sectionZonas = document.querySelector(".zonas")
+
+            const divZonas = document.createElement("DIV")
+            const texto = document.createElement("P")
+            const texto1 = document.createElement("P")
+            const divEnlaces = document.createElement("DIV")
+            const enlace1 = document.createElement("A")
+            const enlace2 = document.createElement("A")
+
+            sectionZonas.appendChild(divZonas)
+            divZonas.appendChild(texto)
+            divZonas.appendChild(texto1)
+            divZonas.appendChild(divEnlaces)
+            divEnlaces.appendChild(enlace1)
+            divEnlaces.appendChild(enlace2)
+
+            enlace1.textContent = ("IR A LA PAGINA DE ESTA ZONA")
+            enlace1.href = (zonas.enlaceZonas)
+            enlace2.textContent = ("VER CURSOS DE ESTA ZONA")
+            enlace2.href = (zonas.enlaceCursos)
+            texto.textContent = (zonas.zona)
+            texto1.textContent = (zonas.ciudades)
+            
+
+            divEnlaces.classList.add("estiloEnlaces")
+            divZonas.classList.add("fichas")
+
+        })
+    })
+}
+
+obtenerZonas();
+
+
+
 
 
 

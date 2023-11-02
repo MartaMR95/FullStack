@@ -1,0 +1,45 @@
+
+
+{
+
+"zonas":[
+{
+    "id":1,
+    "zonas":"Zona Norte",
+    "ciudades":"Galicia,Pais Vasco,Cantabria, La Rioja,Navarra, Asturias",
+    "enlaceZonas":"https://www.tucarreradigital.es/zona-norte",
+    "enlaceCursos":"#"
+    
+},
+
+{
+"id":2,
+"zonas":"Zona Sur",
+"ciudades":"Andalucía,Extremadura, Canarias",
+"enlaceZonas":"https://www.tucarreradigital.es/zona-sur",
+"enlaceCursos":"#"
+
+},
+
+{
+    "id":3,
+    "zonas":"Zona este",
+    "ciudades":"cataluña, islas baleares, castilla la mancha, c.valenciana y murcia",
+    "enlaceZonas":"https://www.tucarreradigital.es/zona-este",
+    "enlaceCursos":"#"
+},
+
+{
+    "id":4,
+    "zonas":"Zona Cnetro",
+    "ciudades":"Madrid,Aragón y Castilla y León",
+    "enlaceZonas":"https://www.tucarreradigital.es/zona-centro",
+    "enlaceCursos":"#"
+
+}
+
+]
+
+}
+
+
